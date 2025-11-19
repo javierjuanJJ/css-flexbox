@@ -1,14 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        
+        .caja {
+            /* Valor por defecto: El contenido desbordado es visible y se dibuja fuera. */
+            overflow: visible;
+
+            /* Oculta y recorta el contenido desbordado, sin permitir el acceso. */
+            overflow: hidden;
+
+            /* Recorta y fuerza la aparición de barras de desplazamiento (horizontales y verticales). */
+            overflow: scroll;
+
+            /* Recomendado: Muestra barras de desplazamiento solo si el contenido desborda. */
+            overflow: auto;
+
+
+
+            /* Valor por defecto: Recorta el texto donde sea necesario. */
+            text-overflow: clip;
+
+            /* Oculta el texto que desborda y añade puntos suspensivos (...) al final. */
+            text-overflow: ellipsis;
+        }
     </style>
 </head>
+
 <body>
-    
+    <!-- Estructura Implícita para un "Botón" o una "Caja" -->
+    <div class="caja">
+        Texto de Contenido
+    </div>
 </body>
+
 </html>

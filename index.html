@@ -31,10 +31,38 @@
 </head>
 
 <body>
-    <!-- Estructura Implícita para un "Botón" o una "Caja" -->
-    <div class="caja">
-        Texto de Contenido
-    </div>
+    <header class="Flex Flex-col Justify-center Items-center">
+
+        <!-- Imagen del Avatar -->
+        <img src="assets/midevf-big.webp" alt="Midudef sonriendo"
+            class="H-[180px] Object-cover Mask-radial Mask-from-center Mask-to-[70%]" />
+
+        <!-- Nombre principal -->
+        <span class="Text-3xl Font-extra-bold Leading-5 Mb-4">
+            Miguel Ángel Durán
+        </span>
+
+        <!-- Badge/Pastilla de Midev -->
+        <div
+            class="Flex Items-center Text-sky-400 Font-mono Px-2 Py-0.5 Border Rounded-full Shadow-sm Bg-black/65 Cursor-crosshair -Mb-4 Z-50">
+            <svg><!-- SVG del check --></svg>
+            <span class="Font-display">
+                midep
+            </span>
+        </div>
+
+        <!-- Título de divulgación -->
+        <p class="Text-center Text-sm Text-[#ArbitraryColor] Max-w-xl">
+            divulgador de programación streamer y creador de contenido Enseñando JavaScript React no GS de forma
+            divertida
+        </p>
+
+        <!-- Sección de botones sociales (mismo contenido que el Paso 2) -->
+        <section class="Flex Gap-2 Mt-4">
+            <!-- ... botones ... -->
+        </section>
+
+    </header>
 </body>
 
 </html>

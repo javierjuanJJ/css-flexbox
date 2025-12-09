@@ -6,38 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .caja {
-            /* Valor por defecto: El contenido desbordado es visible y se dibuja fuera. */
-            overflow: visible;
-
-            /* Oculta y recorta el contenido desbordado, sin permitir el acceso. */
-            overflow: hidden;
-
-            /* Recorta y fuerza la aparición de barras de desplazamiento (horizontales y verticales). */
-            overflow: scroll;
-
-            /* Recomendado: Muestra barras de desplazamiento solo si el contenido desborda. */
-            overflow: auto;
-
-
-
-            /* Valor por defecto: Recorta el texto donde sea necesario. */
-            text-overflow: clip;
-
-            /* Oculta el texto que desborda y añade puntos suspensivos (...) al final. */
-            text-overflow: ellipsis;
-        }
-
-        .container {
-            position: absolute;
-            /* inset: 0 es la abreviación de top: 0, bottom: 0, left: 0, right: 0 [27] */
-            inset: 0;
-            margin: auto;
+        .container{
+            width: 150px;
+            height: 150px;
+            background: white;
+            padding: 10px;
+            box-sizing: border-box;
+            font-size: 48px;
+        }        
+        body{
+            background: blue;
+            margin: 0;
         }
     </style>
 </head>
 
 <body>
+
+    <section class="container">
+        CSS IS AWESOME
+    </section>
 
 </body>
 

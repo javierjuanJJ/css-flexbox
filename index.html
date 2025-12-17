@@ -6,27 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .container{
-            width: 150px;
-            height: 150px;
-            background: white;
-            padding: 10px;
+        .parent {
+            border: 5px solid #000;
+            width: 250px;
+            height: 250px;
             box-sizing: border-box;
-            font-size: 48px;
-            overflow: auto;
-            text-overflow: clip;
-        }        
-        body{
-            background: blue;
-            margin: 0;
+        }
+
+        .container{
+            background: #09f;
+            width: 100px;
+            height: 100px;
+            position: fixed;
+            top: 0;
+            right: 0;
+        }
+        body {
+            background: rgb(188,218,255);
         }
     </style>
 </head>
 
 <body>
 
-    <section class="container">
-        CSS IS AWESOME debajo de esto
+    <section class="parent">
+        <div class="container">
+            container
+        </div>
+    </section>
+    <section class="parent">
+        <div class="container">
+            container
+        </div>
+    </section>
+    <section class="parent">
+        <div class="container">
+            container
+        </div>
     </section>
 
 </body>

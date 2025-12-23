@@ -6,43 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .parent {
-            border: 5px solid #000;
-            width: 250px;
-            height: 250px;
-            box-sizing: border-box;
+
+        body{}
+
+        .parent{
+            display: block;
         }
 
-        .container{
-            background: #09f;
+        .item{
+            border: 1px solid;
+            opacity: .9;
             width: 100px;
             height: 100px;
-            position: fixed;
-            z-index: 10;
+            background: #09f;
         }
-        body {
-            background: rgb(188,218,255);
+
+        .item:first-child{
+            background: yellow;
         }
+
+        .item:last-child{
+            background: red;
+        }
+        
     </style>
 </head>
 
 <body>
 
-    <section class="parent">
-        <div class="container">
-            container
-        </div>
-    </section>
-    <section class="parent">
-        <div class="container">
-            container
-        </div>
-    </section>
-    <section class="parent">
-        <div class="container">
-            container
-        </div>
-    </section>
+    <div class="parent">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
 
 </body>
 

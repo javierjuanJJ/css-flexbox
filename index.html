@@ -12,9 +12,13 @@
         .parent{
             display: flex;
             flex-direction: flex;
-            flex-flow: column-reverse nowrap;
+            flex-flow: column nowrap;
             border: 3px solid rgb(28, 116, 25);
             width: 200px;
+
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto;
         }
 
         .item{

@@ -11,19 +11,20 @@
 
         .parent{
             display: flex;
-            flex-direction: flex;
+            flex-direction: row;
             flex-flow: row nowrap;
             border: 3px solid rgb(28, 116, 25);
             width: 200px;
-            
+            height: 200px;
+            justify-content: space-around;
             
         }
 
         .item{
             border: 1px solid;
             opacity: .9;
-            width: 100px;
-            height: 100px;
+            width: 30px;
+            height: 30px;
             background: #09f;
 
             
@@ -32,20 +33,14 @@
 
         .item:first-child{
             background: yellow;
-            flex: 1;
-            order: 3;
         }
 
         .item:nth-child(2){
             background: blue;
-            flex: 2;
-            order: 2;
         }
 
         .item:last-child{
             background: red;
-            flex: 3;
-            order: 1;
         }
         
     </style>

@@ -12,32 +12,37 @@
         .parent{
             display: flex;
             flex-direction: flex;
-            flex-flow: column nowrap;
+            flex-flow: row nowrap;
             border: 3px solid rgb(28, 116, 25);
             width: 200px;
-
+            
             
         }
 
         .item{
             border: 1px solid;
             opacity: .9;
-            width: 300px;
+            width: 100px;
             height: 100px;
             background: #09f;
 
-            flex-grow: 0;
-            flex-shrink: 0;
-            flex-basis: auto;
+            
             
         }
 
         .item:first-child{
             background: yellow;
+            flex: 1;
+        }
+
+        .item:nth-child(2){
+            background: blue;
+            flex: 2;
         }
 
         .item:last-child{
             background: red;
+            flex: 3;
         }
         
     </style>
